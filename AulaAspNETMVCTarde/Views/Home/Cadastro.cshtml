@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<h2>Tela de Cadastro</h2>
+
+<div>
+    <label>Numero do id</label> <br />
+    <input type="number" name="ID" value="@ViewBag.IdFuncionario" />
+</div>
+<br />
+<div>
+    <label>Nome</label><br />
+    <input type="text" name="Nome" value="@ViewBag.Nome" />
+</div>
+<br />
+<div>
+    <label>Cpf</label><br />
+    <input type="text" name="Cpf" value="@ViewBag.Cpf" />
+</div>
+<br />
+<div>
+    <label>Funcao</label><br />
+    <input type="text" name="Funcao" value="@ViewBag.Funcao" />
+</div>
+<br />
+
+<form action="~/" method="post">
+    <input type="submit" name="Voltar"/>
+</form>
+<p><a href="/Home/Privacy">Vai para o Privacy</a></p>
+<p><a href="http://google.com">Vai para o Google</a></p>
+

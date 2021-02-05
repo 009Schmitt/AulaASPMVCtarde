@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Funcionarios</h1>
+    <p>Os funcionarios da empresa</p>
+</div>
+
+<br />
+<br />
+<br />
+
+<form action="/Home/Cadastro" method="post">
+    <div>
+        <label>Numero do id</label>
+        <input type="number" name="ID" value="@ViewBag.IdFuncionario" />
+    </div>
+    <div>
+        <label>Nome</label>
+        <input type="text" name="Nome" value="@ViewBag.Nome" />
+    </div>
+    <div>
+        <label>Cpf</label>
+        <input type="text" name="Cpf" value="@ViewBag.Cpf" />
+    </div>
+    <div>
+        <label>Funcao</label>
+        <input type="text" name="Funcao" value="@ViewBag.Funcao" />
+    </div>
+
+    <input type="submit" name="Atualizar" />
+</form>
+
+@*<div>
+        <label>Numero do id</label>
+        <input type="number" name="ID" value="@ViewBag.IdFuncionario" />
+    </div>
+    <div>
+        <label>Nome</label>
+        <input type="text" name="Nome" value="@ViewBag.Nome" />
+    </div>
+    <div>
+        <label>Cpf</label>
+        <input type="text" name="Cpf" value="@ViewBag.Cpf" />
+    </div>
+    <div>
+        <label>Funcao</label>
+        <input type="text" name="Nome" value="@ViewBag.Funcao" />
+    </div>*@
+
+@*<div>
+        <label>Numero do id</label>
+        <input type="number" name="ID" value="@ViewData["IdFuncionario"]" />
+    </div>
+    <div>
+        <label>Nome</label>
+        <input type="text" name="Nome" value="@ViewData["Nome"]" />
+    </div>
+    <div>
+        <label>Cpf</label>
+        <input type="text" name="Cpf" value="@ViewData["Cpf"]" />
+    </div>
+    <div>
+        <label>Funcao</label>
+        <input type="text" name="Funcao" value="@ViewData["Funcao"]" />
+    </div>*@
+
+
